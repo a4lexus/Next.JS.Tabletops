@@ -1,4 +1,4 @@
 const Blog = () => {
-  return <div>Blog</div>;
+  return <div className="bg-blue-200 h-screen">Blog</div>;
 };
 export default Blog;

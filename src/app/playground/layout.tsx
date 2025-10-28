@@ -5,13 +5,15 @@ export default function PlaygroundLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="bg-amber-500">
-    
-    <nav>
+  return (
+    <div className="bg-amber-500">
+      <nav>
         <Link href={"/playground/find-play"}>Find & Play</Link> <br />
         <Link href={"/playground/games"}>Games</Link> <br />
         <Link href={"/playground/players"}>Players</Link> <br />
-    </nav>
-    
-    {children}</div>;
-} 
+      </nav>
+
+      {children}
+    </div>
+  );
+}
