@@ -7,7 +7,7 @@ export default function PlaygroundLayout({
 }>) {
   return (
     <div className="bg-amber-500">
-      <nav>
+      <nav className="font-bold">
         <Link href={"/playground/find-play"}>Find & Play</Link> <br />
         <Link href={"/playground/games"}>Games</Link> <br />
         <Link href={"/playground/players"}>Players</Link> <br />
