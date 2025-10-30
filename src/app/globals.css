@@ -5,16 +5,25 @@
   --background: #ffffff;
   --foreground: #171717;
   --accent: #fee685;
+  --accent2: #84ea93;
+  --accent3: #9791e9;
+  --accent4: #3ff7df;
 }
 .dark {
   --background: #0a0a0a;
   --foreground: #ededed;
   --accent: #746529;
+  --accent2: #139880;
+  --accent3: #6640b8;
+  --accent4: #128777;
 
   @theme inline {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
     --color-accent: var(--accent);
+    --color-accent2: var(--accent2);
+    --color-accent3: var(--accent3);
+    --color-accent4: var(--accent4);
 
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
