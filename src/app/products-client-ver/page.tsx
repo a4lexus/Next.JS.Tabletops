@@ -15,7 +15,7 @@ const ProductsClient = () => {
     fetchProducts();
   }, []);
   return (
-    <div className="bg-blue-200 h-screen">
+    <div className="bg-blue-200 ">
       <ul>
         {products.map((product) => (
           <li key={product.id}> {product.title}</li>
