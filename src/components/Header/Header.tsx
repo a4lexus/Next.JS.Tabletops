@@ -37,7 +37,7 @@ export default function Header() {
               href={"/playground/find-play"}
               className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
-              Find &amp; Play
+              Playground
             </Link>
             <Link
               href={"/help/faq"}

@@ -6,5 +6,6 @@ export const gameTable = pgTable("games", {
   description: varchar({ length: 255  }).notNull().unique(),
 });
 
-// При любых изменениях в этой схеме не забудьте обновить путь к этой схеме в файле drizzle.config.ts
-// и выполнить команду для создания миграций: npx drizzle-kit migrate
+// При любых изменениях сначала меняем/добавляем схему
+// генерируем npx drizzle-kit generate  - сгенерирует скрипты в папку drizzle
+// мигрируем npx drizzle-kit migrate  -внесет изменения в базу данных
