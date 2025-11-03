@@ -1,5 +1,6 @@
 "use client";
-
+import { Moon, Sun } from 'lucide-react';
+import { MoonStar } from 'lucide-react';
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 
@@ -21,7 +22,11 @@ export default function ThemeToggle() {
       type="button"
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
-      Change theme
+       {resolvedTheme === "dark" ? (
+        <Sun className="hover:text-[#b96011]" />
+      ) : (
+        <Moon className="hover:text-[#b96011]" />
+      )}
     </button>
   );
 }
