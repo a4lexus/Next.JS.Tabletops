@@ -11,7 +11,7 @@ export default function PlaygroundLayout({
         <Link href={"/playground/find-play"}>Find & Play</Link> <br />
         <Link href={"/playground/games"}>Games</Link> <br />
         <Link href={"/playground/players"}>Players</Link> <br />
-        <Link href={"/playground/add-game"}>Add Game</Link> <br />
+        {/* <Link href={"/playground/add-game"}>Add Game</Link> <br /> */}
       </nav>
 
       {children}

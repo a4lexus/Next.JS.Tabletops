@@ -1,19 +1,23 @@
 import { ProductCard } from "@/components/ProductCard/ProductCard";
 import Product from "@/types/Product";
 
-const ProductServerVersion = async () => {
-  const res = await fetch("https://dummyjson.com/products", {});
+const ProductsServerVersion = async () => {
+  const res = await fetch("https://dummyjson.com/products");
   const { products } = await res.json();
 
   return (
-    <div className="bg-blue-200 p-12 ">
-      <ul>
-        {products.map((product: Product) => (
-          <ProductCard key={product.id} product={product} variant={"default"} />
+    <div className="container mx-auto py-8">
+      <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {products.map((p: Product) => (
+          <li key={p.id} className="col-span-1">
+            <div className="group rounded-lg bg-card text-card-foreground ring-1 ring-ring hover:shadow-lg transition-shadow">
+              <ProductCard product={p} variant={"default"} />
+            </div>
+          </li>
         ))}
       </ul>
     </div>
   );
 };
 
-export default ProductServerVersion;
+export default ProductsServerVersion;

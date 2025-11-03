@@ -13,61 +13,84 @@ export default function Header() {
               className="h-10 w-auto object-contain"
             />
           </Link>
-
-          <nav className="flex items-center gap-2 sm:gap-4 overflow-x-auto">
+          <nav className="flex items-center justify-evenly flex-1 ml-4 w-full gap-1">
             <Link
               href={"/blog"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Blog
             </Link>
             <Link
               href={"/about"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               About
             </Link>
             <Link
               href={"/blog/post"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Post
             </Link>
             <Link
               href={"/playground/find-play"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Playground
             </Link>
             <Link
               href={"/help/faq"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               FAQ
             </Link>
             <Link
               href={"/users-client-ver"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Users-Client
             </Link>
             <Link
               href={"/users-server-ver"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Users-Server
             </Link>
             <Link
               href={"/products-client-ver"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Products-Client
             </Link>
             <Link
               href={"/products-server-ver"}
-              className="px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Products-Server
+            </Link>
+            <Link
+              href={"/events/new"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Create Event
+            </Link>
+            <Link
+              href={"/events"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Events
+            </Link>
+            <Link
+              href={"/playground/add-game"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Create Game
+            </Link>
+            <Link
+              href={"/playground/games"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Games
             </Link>
             <ThemeToggle />
           </nav>
