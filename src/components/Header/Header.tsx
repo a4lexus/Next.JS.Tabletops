@@ -92,7 +92,20 @@ export default function Header() {
             >
               Games
             </Link>
+            <Link
+              href={"/login"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Sign in
+            </Link>
+            <Link
+              href={"/profile"}
+              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
+            >
+              Profile
+            </Link>
             <ThemeToggle />
+           
           </nav>
         </div>
       </div>
