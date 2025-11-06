@@ -7,10 +7,10 @@ const LoginPage = ({}) => {
     <div>
       <button type="button" onClick={() => signIn("google")}>
         Google Sign In
-      </button> <br />
-      {/* <button type="button" onClick={() => signOut("google")}>
+      </button> 
+      <button type="button" onClick={() => signOut()}>
         Google Sign out
-      </button> */}
+      </button>
     </div>
   );
 };

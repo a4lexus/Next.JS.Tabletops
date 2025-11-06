@@ -29,6 +29,20 @@
       "when": 1762246914807,
       "tag": "0003_fair_madripoor",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1762334473912,
+      "tag": "0004_pretty_reaper",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1762342684570,
+      "tag": "0005_happy_typhoid_mary",
+      "breakpoints": true
     }
   ]
 }

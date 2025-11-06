@@ -1,11 +1,15 @@
 import Link from "next/link";
 import ThemeToggle from "../theme-toggle";
+import GoogleSignIn from "../google-sign-in";
 
 export default function Header() {
   return (
     <header className="bg-amber-100 text-cyan-700 shadow-sm sticky top-0 z-40">
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        
+        <div className="flex items-center justify-between h-28">
+          
           <Link href={"/"}>
             <img
               alt="Lear Corporation"
@@ -92,20 +96,16 @@ export default function Header() {
             >
               Games
             </Link>
-            <Link
-              href={"/login"}
-              className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
-            >
-              Sign in
-            </Link>
+
             <Link
               href={"/profile"}
               className="w-full text-center px-3 py-2 rounded-md text-sm font-medium text-cyan-700 hover:text-cyan-900 hover:bg-amber-200 transition"
             >
               Profile
             </Link>
+            {/* <Todos /> */}
+            <GoogleSignIn /> <hr /> <hr />
             <ThemeToggle />
-           
           </nav>
         </div>
       </div>

@@ -1,5 +1,14 @@
-
-import { integer, pgTable, varchar,decimal, boolean, timestamp } from "drizzle-orm/pg-core";
+import { create } from "domain";
+import {
+  integer,
+  pgTable,
+  varchar,
+  decimal,
+  boolean,
+  timestamp,
+  text,
+  serial,
+} from "drizzle-orm/pg-core";
 
 export const gameTable = pgTable("games", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
@@ -22,6 +31,24 @@ export const workshops = pgTable("workshops", {
   name: varchar({ length: 255 }).notNull(),
   description: varchar({ length: 255 }).notNull(),
   price: decimal().notNull(),
-  isPublished:boolean().default(true),
-  datetime:timestamp().notNull(),
+  isPublished: boolean().default(true),
+  datetime: timestamp().notNull(),
+});
+export const users = pgTable("users", {
+  id: serial().primaryKey(),
+  name: varchar({ length: 255 }).notNull(),
+  email: varchar({ length: 255 }).notNull().unique(),
+  image: text(),
+  role: varchar({ length: 100 }).notNull().default("customer"),
+});
+
+export const todos = pgTable("todos", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  title: varchar({ length: 255 }).notNull(),
+  description: varchar({ length: 255 }).notNull(),
+  status: boolean().default(false),
+  createdAt: timestamp("created_at").defaultNow(),
+  userId: integer("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
 });
